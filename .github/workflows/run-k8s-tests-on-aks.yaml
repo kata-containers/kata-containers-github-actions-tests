@@ -22,6 +22,7 @@ jobs:
       matrix:
         vmm:
           - clh
+          - dragonball
           - qemu
     uses: ./.github/workflows/create-aks.yaml
     with:
@@ -88,6 +89,7 @@ jobs:
       matrix:
         vmm:
           - clh
+          - dragonball
           - qemu
     needs: run-k8s-tests
     if: always()
