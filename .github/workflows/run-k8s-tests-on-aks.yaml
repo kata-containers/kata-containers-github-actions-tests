@@ -77,6 +77,7 @@ jobs:
         env:
           KATA_HYPERVISOR: ${{ matrix.vmm }}
 
+
       - name: Delete AKS cluster used to test ${{ matrix.vmm }}
         if: always()
         uses: ./.github/workflows/delete-aks.yaml
